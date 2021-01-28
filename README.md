@@ -3,6 +3,8 @@ Accepts an arbitrary combinations of fields (including geometry) and returns dup
 
 The recently coded trie class 'DuplicationTrie.py' is called from within a fork of an older function (GetDuplicates_v2). The prior version of this tool ran with time complexity of O(n^2), fine for most feature classes, but we found the need for a better performing tool with certain larger datasets, or with comparing polygon geometries (arrays of coordinates).
 
+Based on theory and testing, i.e. in "SearchAlgoPerformance.png", the Trie-based variation is much closer to linear time and space efficiency.
+
 The tool can be run from an Arc10.X toolbox using the following __main__ logic and validation code. Parameters / layout are in the "GUI.png"
 
 # __main__.py
